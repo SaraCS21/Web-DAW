@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+/* Encabezado de la web */
+
+.encabezado{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #212932;
+}
+
+/* Logo iluminado */
+
+.logo{
+    display: flex; 
+    align-items: center;
+}
+
+.encabezado a .logo i{
+    display: flex;
+
+    font-size: 3vw;
+
+    animation: animate 3s linear infinite;
+    animation-delay: 0.1s;
+}
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 60px #00b3ff;
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Encabezado */
+
+.encabezado{
+    position: relative;
+    z-index: 1000;
+    bottom: 45%;
+
+    display: flex;
+    width: 100%;
+    height: 100px;
+
+    background-color: #212932;
+    box-shadow: 0 0 10px #4e4e4e;
+}
+
+.encabezado a{
+    height: 180%;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    transition: 1s;
+    color: white;
+}
+
+.encabezado a h2{
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.encabezado ul{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+.encabezado ul li{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 28%;
+    height: 100%;
+}
+
+.encabezado ul li a{
+    height: 100%;
+}
+
+/* Menú desplegable */
+
+.encabezado ul li > ul{
+    display: none;
+}
+
+.encabezado ul li:hover > ul{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+
+    display: block;
+
+    z-index: 1000;
+}
+
+.encabezado ul li ul li{
+    width: 100%;
+    height: 50px;
+
+    background-color: #393d45;
+}
+
+/* Encabezado imagenes */
+
+.slider{
+    position: relative;
+    height: 350px;
+
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+}
+
+.slider h3{
+    position: absolute;
+
+    margin-left: 100px;
+    margin-top: 50px;
+
+    color: white;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.slider h2{
+    position: absolute;
+    width: 40%;
+    
+    margin-left: 100px;
+    margin-top: 80px;
+
+    color: white;
+    font-size: 3em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.slider li:hover h2, .slider li:hover h3{
+    color: yellowgreen;
+    transition: 0.5s;
+}
+
+/* Contenido de la Web */ 
+
+.web{
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #eafef1;
+}
+
+.contenido{
+    width: 83%;
+    padding-bottom: 100px;
+}
+
+.interior{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.juego_derecha, .juego_izquierda{
+    display: flex;
+
+    padding-left: 4%;
+    padding-top: 2%;
+}
+
+.juego_derecha img{
+    width: 40%;
+    height: 320px;
+
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #96aa9d;
+}
+
+.juego_izquierda img{
+    width: 40%;
+    height: 320px;
+    margin-right: 5%;
+
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #96aa9d;
+}
+
+.texto_derecha{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding-left: 5%;
+}
+
+.texto_izquierda{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: end;
+}
+
+.texto_derecha h3, .texto_izquierda h3{
+    width: 100%;
+    font-size: 2.5em;
+}
+
+.texto_izquierda h3{
+    padding-right: 8.7%;
+}
+
+.sinopsis, .generos{
+    width: 80%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.texto_izquierda .sinopsis, .texto_izquierda .generos{
+    width: 91%;
+}
+
+.sinopsis{
+    font-size: 1.05em;
+}
+
+.generos{
+    font-size: 0.9em;
+}
+
+.texto_izquierda .boton, .texto_derecha .boton{
+    width: 15%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    background-color: #29a39e;
+    box-shadow: 2px 2px 5px #96aa9d;
+}
+
+.texto_derecha .boton{
+    margin-left: 70%;
+}
+
+.boton a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+
+    opacity: 0.5;
+}
+
+.boton a:hover{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+/* Barra lateral */
+
+.lateral{
+    position: sticky;
+    top: 20px;
+    height: 100%;
+    width: 16%;
+
+    text-align: center;
+}
+
+.lateral h3{
+    margin-top: 5%;
+    margin-bottom: 15%;
+    font-size: 1.5em;
+}
+
+.lateral .lista{
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+
+    background-color: #a4f6bf;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.lateral .lista:hover{
+    transform: scale(1.05) translateX(10px) translateY(-15px);
+    box-shadow: 5px 5px 10px #288d8a;
+
+    z-index: 1000;
+}
+
+.lateral .lista .imagen{
+    position: relative;
+    width: 38%;
+    height: 75px;
+    margin-right: 10px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.lateral .lista .imagen img{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.lateral .lista .interior{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    font-size: 0.9em;
+}
+
+.lateral .lista .interior h2{
+    position: absolute;
+    right: -200px;
+    top: 17px;
+
+    color: black;
+    font-size: 2em;
+
+    transition: 0.5s;
+}
+
+.lateral .lista:hover .interior h2{
+    right: 38px;
+    top: 30px;
+}
+
+.lateral .lista:hover .imagen{
+    transition: 0.7s;
+    box-shadow: 3px 3px 8px #81c297;
+}
+
+.lateral .lista:hover .interior{
+    transition: 0.5s;
+    color: #a4f6bf;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    padding: 20px 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #212932;
+}
+
+.iconos, .menu{
+    display: flex;
+    justify-content: center;
+
+    margin: 10px 0;
+}
+
+.iconos li, .menu li{
+    list-style: none;
+}
+
+.iconos li a{
+    margin: 0 10px;
+
+    font-size: 2em;
+    color: white;
+    
+    transition: 0.5s;
+}
+
+.iconos li a:hover{
+    transform: translateY(-10px);
+}
+
+.menu li a{
+    display: inline-block;
+    margin: 0 10px;
+
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    
+    transition: 0.5s;  
+    opacity: 0.5;
+}
+
+.menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+}

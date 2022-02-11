@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    
+    font-family: 'Inconsolata', monospace;
+}
+
+/* Logo iluminado */
+
+.logo{
+    display: flex; 
+    align-items: center;
+}
+
+.encabezado a .logo i{
+    display: flex;
+
+    font-size: 3vw;
+
+    animation: animate 3s linear infinite;
+    animation-delay: 0.1s;
+}
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 60px #00b3ff;
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Encabezado */
+
+.encabezado{
+    position: relative;
+    z-index: 1000;
+    bottom: 45%;
+
+    display: flex;
+    width: 100%;
+    height: 100px;
+
+    background-color: #212932;
+    box-shadow: 0 0 10px #4e4e4e;
+}
+
+.encabezado a{
+    height: 180%;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    transition: 1s;
+    color: white;
+}
+
+.encabezado a h2{
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.encabezado ul{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+.encabezado ul li{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 28%;
+    height: 100%;
+}
+
+.encabezado ul li a{
+    height: 100%;
+}
+
+/* Menú desplegable */
+
+.encabezado ul li > ul{
+    display: none;
+}
+
+.encabezado ul li:hover > ul{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+
+    display: block;
+
+    z-index: 1000;
+}
+
+.encabezado ul li ul li{
+    width: 100%;
+    height: 50px;
+
+    background-color: #393d45;
+}
+
+/* Encabezado imagenes */
+
+.slider{
+    height: 350px;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+.slider ul{
+    display: flex;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.slider h3{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 50px;
+
+    color: white;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.slider h2{
+    position: absolute;
+    width: 40%;
+    margin-left: 100px;
+    margin-top: 80px;
+    
+    color: white;
+    font-size: 3em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.slider li:hover h2, .slider li:hover h3{
+    color: yellowgreen;
+    transition: 0.5s;
+}
+
+/* Contenido de la Web */ 
+
+.contenido{
+    display: grid;
+    grid-template-areas: 
+    "PS4 XBOX SWITCH"
+    "SEPARACION SEPARACION SEPARACION"
+    "STEAM EPIC GRATIS";
+
+    padding-bottom: 100px;
+
+    background-color: #eafef1;
+}
+
+.PS4 h2, .XBOX h2, .SWITCH h2, .STEAM h2, .EPIC h2, .GRATIS h2, .NOTICIAS h3{
+    height: 60px;
+    padding-left: 50px;
+    margin-top: 20px;
+
+    font-size: 2.2vh;
+}
+
+.PS4, .XBOX, .SWITCH, .STEAM, .EPIC, .GRATIS{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 90%;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+.PS4{
+    grid-area: PS4;
+}
+
+.XBOX{
+    grid-area: XBOX;
+}
+
+.SWITCH{
+    grid-area: SWITCH;
+}
+
+.STEAM{
+    grid-area: STEAM;
+}
+
+.EPIC{
+    grid-area: EPIC;
+}
+
+.GRATIS{
+    grid-area: GRATIS;
+}
+
+.separacion{
+    grid-area: SEPARACION;
+    height: 5px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    
+    background-color: #29a39e;
+    opacity: 0.5;
+}
+
+.contenido .juego{
+    position: relative;
+    width: 100%;
+
+    margin-left: 50px;
+    margin-top: 2%;
+}
+
+.contenido .puntuacion{
+    position: absolute;
+    right: 5%;
+    top: 0;
+
+    display: flex;
+    margin-top: 15px;
+    width: 70px;
+    height: 70px;
+
+    border-radius: 100%;
+    background-color: black;
+    transition: 0.8s;
+}
+
+.contenido .puntuacion p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    font-size: 3.5em;
+    color: white;
+}
+
+.contenido .juego .imagen{
+    height: 100px;
+}
+
+.contenido .juego img{
+    width: 100%;
+    height: 100px;
+
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.contenido .juego .texto{
+    position: absolute;
+    top: 0;
+
+    width: 60%;
+    padding: 18px;
+    padding-left: 30px;
+
+    color: black;
+}
+
+.contenido .texto p{
+    padding-top: 5px;
+}
+
+.contenido a:hover img{
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.contenido a:hover .puntuacion{
+    background-color: turquoise;
+    transition: 0.5s;
+}
+
+.contenido a:hover .puntuacion p{
+    color: black;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 45%;
+    margin-top: 5%;
+    width: 20%;
+    height: 50px;
+    
+    border-radius: 20px;
+    background-color: #29a39e;
+    box-shadow: 2px 2px 5px #96aa9d;
+}
+
+.boton a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    opacity: 0.5;
+}
+
+.boton a:hover{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 20px 50px;
+
+    background: #212932;
+}
+
+.iconos, .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.iconos li, .menu li{
+    list-style: none;
+}
+
+.iconos li a{
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.iconos li a:hover{
+    transform: translateY(-10px);
+}
+
+.menu li a{
+    margin: 0 10px;
+
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+}

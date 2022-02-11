@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+
+    font-family: 'Inconsolata', monospace;
+}
+
+/* Logo iluminado */
+
+.logo{
+    display: flex; 
+    align-items: center;
+}
+
+.encabezado a .logo i{
+    display: flex;
+
+    font-size: 3vw;
+
+    animation: animate 3s linear infinite;
+    animation-delay: 0.1s;
+}
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 60px #00b3ff;
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Encabezado */
+
+.encabezado{
+    position: relative;
+    z-index: 1000;
+    bottom: 45%;
+
+    display: flex;
+    width: 100%;
+    height: 100px;
+
+    background-color: #212932;
+    box-shadow: 0 0 10px #4e4e4e;
+}
+
+.encabezado a{
+    height: 180%;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    transition: 1s;
+    color: white;
+}
+
+.encabezado a h2{
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.encabezado ul{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+.encabezado ul li{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 28%;
+    height: 100%;
+}
+
+.encabezado ul li a{
+    height: 100%;
+}
+
+/* Menú desplegable */
+
+.encabezado ul li > ul{
+    display: none;
+}
+
+.encabezado ul li:hover > ul{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+
+    display: block;
+
+    z-index: 1000;
+}
+
+.encabezado ul li ul li{
+    width: 100%;
+    height: 50px;
+
+    background-color: #393d45;
+}
+
+/* Contenido */
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: #eafef1;
+}
+
+.superior{
+    width: 100%;
+    height: 890px;
+}
+
+.superior img{
+    width: 100%;
+    height: 100%;
+}
+
+.sinopsis{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.sinopsis img{
+    width: 100%;
+    height: 100%;
+}
+
+.sinopsis .personaje{
+    position: absolute;
+    bottom: 0;
+    right: 52%;
+
+    width: 45%;
+    height: 130%;
+
+    z-index: 50;
+}
+
+.sinopsis .texto{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+
+    width: 40%;
+    color: white;
+}
+
+.sinopsis .texto h2{
+    margin-bottom: 5%;
+    font-size: 3vw;
+}
+
+.sinopsis .texto p{
+    margin-bottom: 3%;
+    font-size: 1vw;
+}
+
+/* Descubre más de la saga */
+
+.descubre{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+.descubre h2{
+    width: 100%;
+
+    margin-top: 3%;
+    font-size: 3vw;
+}
+
+.descubre .caja{
+    width: 21%;
+
+    margin-top: 3%;
+}
+
+.descubre div img{
+    width: 100%;
+    height: 350px;
+
+    box-shadow: 0 0 10px #4e4e4e;
+}
+
+.descubre div h3{
+    text-align: left;
+    padding-top: 5%;
+    font-size: 1.3vw;
+}
+
+.descubre div p{
+    text-align: left;
+    margin-top: 5%;
+    font-size: 0.9vw;
+}
+
+.descubre .texto{
+    width: 100%;
+    height: 150px;
+}
+
+.descubre div .boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 50px;
+    margin-top: 10%;
+    margin-left: 25%;
+
+    background-color: #29a39e;
+    box-shadow: 0 0 10px #4e4e4e;
+    border-radius: 50px;
+}
+
+.descubre div .boton a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+/* Imágenes y vídeos */
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    width: 100%;
+    margin-top: 2%;
+}
+
+.imagenes h2{
+    width: 100%;
+
+    font-size: 3vw;
+    padding-top: 1%;
+    margin-bottom: 3%;
+}
+
+/* Slider manual */
+
+.imagenes .contenedor{
+    margin-left: 28%;
+    width: 100%;
+}
+
+ul, li{
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 60%;
+    height: 500px;
+}
+
+ul.slider li{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+ul.slider li img, iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    box-shadow: 0 0 10px #4e4e4e;
+}
+
+ul.slider li:first-child{
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+
+.menu_slider{
+    width: 60%;
+    margin: 20px;
+}
+
+.menu_slider li{
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.menu_slider li a{
+    display: flex;
+    width: 10px;
+    height: 10px;
+
+    background-color: rgb(182, 181, 181);
+    border-radius: 100%;
+    opacity: 0.5;
+}
+
+.menu_slider li a:hover{
+    opacity: 1;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 50px;
+
+    background: #212932; 
+
+    z-index: 5;
+}
+
+.iconos, .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.iconos li, .menu li{
+    list-style: none;
+}
+
+.iconos li a{
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.iconos li a:hover{
+    transform: translateY(-10px);
+}
+
+.menu li a{
+    font-size: 1.2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
