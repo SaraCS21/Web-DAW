@@ -11,6 +11,8 @@ body{
     justify-items: center;
     align-items: center;
     font-family: 'Inconsolata', monospace;
+
+    background-color: #eafef1;
 }
 
 /* Encabezado de la web */
@@ -206,6 +208,141 @@ body{
 .slider li:hover h2, .slider li:hover h3{
     color: yellowgreen;
     transition: 0.5s;
+}
+
+/* Contenido */
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+
+    width: 100%;
+
+    margin: 3%;
+}
+
+.ancho, .estrecho, .pequeños{
+    margin-top: 3%;
+}
+
+.contenido .ancho{
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: paleturquoise;
+}
+
+.contenido .ancho img, .contenido .estrecho img{
+    width: 100%;
+}
+
+.contenido .ancho h2, .contenido .estrecho h2{
+    width: 100%;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.contenido .ancho .texto, .contenido .estrecho .texto{
+    width: 100%;
+    padding-top: 3%;
+    padding: 2%;
+}
+
+.pie{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+}
+
+.pie p:nth-child(1){
+    width: 13%;
+    padding-top: 3%;
+
+    font-weight: bolder;
+    color: #29a39e;
+}
+
+.pie p:nth-child(2){
+    width: 30%;
+    padding-top: 3%;
+}
+
+.contenido .pequeños{
+    width: 25%;
+}
+
+.contenido .pequeños{
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 100%;
+}
+
+.contenido .pequeños div:nth-child(1){
+    width: 100%;
+
+    margin-bottom: 2%;
+    
+    border: 1px solid;
+    background-color: lightcoral;
+}
+
+.contenido .pequeños div:nth-child(2){
+    width: 100%;
+    
+    border: 1px solid;
+    background-color: lightcoral;
+}
+
+.contenido .pequeños div h2{
+    width: 100%;
+    padding-bottom: 3%;
+    padding: 3%;
+}
+
+.contenido .pequeños div p{
+    padding: 3%;
+}
+
+.contenido .pequeños img{
+    width: 100%;
+}
+
+.contenido .pequeños .pie{
+    padding: 0%;
+}
+
+.contenido .pequeños .pie p:nth-child(1){
+    margin-right: 5%;
+}
+
+.contenido .pequeños .pie p:nth-child(2){
+    width: 40%;
+    padding-top: 3%;
+}
+
+.contenido .estrecho{
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: lightgreen;
+}
+
+.contenido .estrecho img{
+    width: 100%;
+}
+
+.contenido .estrecho .pie p:nth-child(1){
+    margin-right: 5%;
+}
+
+.contenido .estrecho .pie p:nth-child(2){
+    width: 40%;
+    padding-top: 3%;
 }
 
 /* Footer */
