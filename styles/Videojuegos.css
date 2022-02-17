@@ -178,10 +178,12 @@ body{
     color: white;
     font-size: 3em;
     font-family: 'Raleway', sans-serif;
+
+    text-shadow: 1px 1px white, -1px -1px black;
 }
 
 .slider li:hover h2, .slider li:hover h3{
-    color: yellowgreen;
+    color: #a4f6bf;
     transition: 0.5s;
 }
 

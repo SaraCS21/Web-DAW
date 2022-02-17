@@ -11,7 +11,7 @@ body{
     justify-items: center;
     align-items: center;
     font-family: 'Inconsolata', monospace;
-    background-color: #29a39e;
+    background-color: #61fcf7;
 }
 
 /* Encabezado de la web */
@@ -24,7 +24,6 @@ body{
     display: flex;
     width: 100%;
     height: 100px;
-    background-color: #212932;
 }
 
 /* Logo iluminado */
@@ -167,7 +166,7 @@ body{
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(164, 246, 191, 0.5);
+    background-color: rgba(123, 199, 148, 0.5);
     box-shadow: 0 0 10px #0d3837;
     border-radius: 50px; 
 }
@@ -190,6 +189,7 @@ body{
     
     font-size: 2.5em;
     opacity: 1;
+    text-shadow: 0.05em 0.05em 0.1em #c5fad7;
 }
 
 .contenido div{
@@ -203,6 +203,8 @@ body{
 }
 
 .contenido .terminos{
+    font-size: 0.8em;
+
     display: flex;
     flex-direction: row;
     margin-left: 17%;
@@ -210,7 +212,6 @@ body{
 
 .contenido .terminos input{
     width: 10%;
-    margin-top: 0.6%;
 }
 
 .contenido .terminos label{
@@ -288,7 +289,7 @@ body{
     cursor: pointer;
 
     background-color: rgba(34, 88, 87, 0.7);
-    box-shadow: 0 0 10px #a4f6bf;
+    box-shadow: 0 0 10px #c5fad7;
 }
 
 /* Footer */
