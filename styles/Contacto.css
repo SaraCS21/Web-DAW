@@ -144,11 +144,14 @@ body{
 
     width: 100%;
     height: 73vh;
+
+    font-family: 'Raleway', sans-serif;
 }
 
 .contenido img{
     position: absolute;
     width: 100%;
+    height: 100%;
 
     z-index: -9;
     opacity: 0.5;
@@ -156,6 +159,7 @@ body{
 
 .contenido main{
     width: 40%;
+    height: 90%;
     padding: 1%;
 
     display: flex;
@@ -184,7 +188,7 @@ body{
 
     width: 100%;
     
-    font-size: 2.2em;
+    font-size: 2.5em;
     opacity: 1;
 }
 
@@ -193,16 +197,39 @@ body{
     flex-direction: column;
     
     margin-left: 20%;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 
     width: 100%;
 }
 
+.contenido .terminos{
+    display: flex;
+    flex-direction: row;
+    margin-left: 17%;
+}
+
+.contenido .terminos input{
+    width: 10%;
+    margin-top: 0.6%;
+}
+
+.contenido .terminos label{
+    width: 90%;
+}
+
+.contenido .terminos label a{
+    text-decoration: none;
+    color: #0d3837;
+}
+
+.contenido .terminos label a:hover{
+    text-decoration: underline;
+}
+
 .contenido div label{
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 
     font-size: 1.1em;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
@@ -211,7 +238,6 @@ body{
     width: 70%;
 
     font-size: 0.9em;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 
     background-color: transparent;
@@ -223,12 +249,12 @@ body{
     margin-bottom: 3%;
 
     font-size: 1.1em;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     color: #212932;
 
     background-color: transparent;
     border: 0px;
+    font-family: 'Raleway', sans-serif;
     border-bottom: 2px solid black;
 }
 

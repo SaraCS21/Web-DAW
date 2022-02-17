@@ -34,7 +34,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">   
     
     
-    <link rel="stylesheet" href="../styles/usuario.css">
+    <link rel="stylesheet" href="../styles/Contacto.css">
 </head>
 <body>
 
@@ -71,20 +71,25 @@
             <form action="http://www.iesanaluisabenitez.org/" method="get">
                 <div>
                     <label for="nombre">Nombre:</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
                 <div>
                     <label for="apellidos">Apellidos:</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
                 <div>
                     <label for="email">Email:</label>
-                    <input type="email">
+                    <input type="email" required>
                 </div>
                 <div>
                     <label for="mensaje">Mensaje:</label>
                     <textarea name="mensaje" rows="5"></textarea>
                 </div>
+                <div class="terminos">
+                    <input type="checkbox" name="acepto" required>
+                    <label for="acepto">He leído y acepto los <a href="https://policies.google.com/terms?hl=es" target="blank">Términos y condiciones</a></label>
+                </div>
+                
                 <input type="submit" value="Enviar" class="boton">
             </form>
         </main>

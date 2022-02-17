@@ -197,7 +197,7 @@ body{
 }
 
 .slider li:hover h2, .slider li:hover h3{
-    color: yellowgreen;
+    color: #a4f6bf;
     transition: 0.5s;
 }
 
@@ -348,7 +348,7 @@ body{
 
 .lateral .lista:hover{
     transform: scale(1.05) translateX(10px) translateY(-15px);
-    box-shadow: 5px 5px 10px #288d8a;
+    box-shadow: 5px 5px 10px #96aa9d;
 
     z-index: 1000;
 }
