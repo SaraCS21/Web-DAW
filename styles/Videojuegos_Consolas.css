@@ -411,11 +411,11 @@ body{
 /* Footer */
 
 footer{
-    width: 100%;
-    padding: 20px 50px;
-
     display: flex;
     flex-direction: column;
+
+    width: 100%;
+    padding: 20px 50px;
 
     background: #212932;
 }
@@ -423,6 +423,7 @@ footer{
 .iconos, .menu{
     display: flex;
     justify-content: center;
+    align-items: center;
 
     margin: 10px 0;
 }
@@ -432,11 +433,10 @@ footer{
 }
 
 .iconos li a{
-    margin: 0 10px;
-
     font-size: 2em;
     color: white;
-    
+    margin: 0 10px;
+    display: inline-block;
     transition: 0.5s;
 }
 
@@ -444,15 +444,26 @@ footer{
     transform: translateY(-10px);
 }
 
+.iconos li a:hover .bxl-twitter{
+    color: #00acee;
+}
+
+.iconos li a:hover .bxl-facebook-circle{
+    color: #3b5998;
+}
+
+.iconos li a:hover .bxl-instagram-alt{
+    color: #C13584;
+}
+
 .menu li a{
-    display: inline-block;
     margin: 0 10px;
 
     text-decoration: none;
     font-size: 1.2em;
     color: white;
     
-    transition: 0.5s;  
+    transition: 0.5s;
     opacity: 0.5;
 }
 
@@ -464,7 +475,7 @@ footer p{
     margin-top: 15px;
     margin-bottom: 10px;
 
-    text-align: center;
     color: white;
+    text-align: center;
     font-size: 0.9em;
 }

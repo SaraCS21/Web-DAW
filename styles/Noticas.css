@@ -6,14 +6,8 @@
 
 
 body{
-    display: grid;
-    grid-template-areas: 
-    "cab cab cab"
-    "nav nav nav"
-    "slider slider slider"
-    "cont cont cont"
-    "foot foot foot"
-    ;
+    display: flex;
+    flex-wrap: wrap;
     justify-items: center;
     align-items: center;
     font-family: 'Inconsolata', monospace;
@@ -217,23 +211,20 @@ body{
 /* Footer */
 
 footer{
-    grid-area: foot;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: #212932;
-    padding: 20px 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+
+    width: 100%;
+    padding: 20px 50px;
+
+    background: #212932;
 }
 
 .iconos, .menu{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin: 10px 0;
 }
 
@@ -253,13 +244,26 @@ footer{
     transform: translateY(-10px);
 }
 
+.iconos li a:hover .bxl-twitter{
+    color: #00acee;
+}
+
+.iconos li a:hover .bxl-facebook-circle{
+    color: #3b5998;
+}
+
+.iconos li a:hover .bxl-instagram-alt{
+    color: #C13584;
+}
+
 .menu li a{
+    margin: 0 10px;
+
+    text-decoration: none;
     font-size: 1.2em;
     color: white;
-    margin: 0 10px;
-    display: inline-block;
+    
     transition: 0.5s;
-    text-decoration: none;
     opacity: 0.5;
 }
 
@@ -268,43 +272,10 @@ footer{
 }
 
 footer p{
-    color: white;
-    text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
+
+    color: white;
+    text-align: center;
     font-size: 0.9em;
-}
-
-
-@media only screen and (max-width: 480px){
-
-    .usuario_a{
-        padding-left: 58%;
-    }
-
-    .slider{
-        height: 200px;
-    }
-
-    .slider h3{
-        margin-left: 44px;
-        margin-top: 30px;
-        font-size: 2.8vw;
-    }
-    
-    .slider h2{
-        width: 80%;
-        margin-left: 44px;
-        margin-top: 55px;
-        font-size: 4vw;
-    }
-
-    footer{
-        height: 170px;
-    }
-
-    .menu li a{
-        font-size: 1em;
-        opacity: 0.8;
-    }
 }
