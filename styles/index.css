@@ -181,6 +181,68 @@ body{
     z-index: 5;
 }
 
+/* Volver arriba */
+
+.arriba{
+    position: absolute;
+    top: 92%;
+
+    width: 2.5%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+    border-radius: 100%;
+    font-size: 3em;
+    opacity: 0.7;
+
+    z-index: 500;
+}
+
+.arriba:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+    opacity: 1;
+    box-shadow: 0 0 10px #4e4e4e;
+}
+
+.play{
+    background-color: #003791;
+    left: 91%;
+}
+
+.xbox{
+    background-color: #107C10;
+    left: 88%;
+}
+
+.switch{
+    background-color: #e60012;
+    left: 85%;
+}
+
+.steam{
+    background-color: #2a475e;
+    left: 82%;
+}
+
+.epic{
+    background-color: black;
+    left: 79%;
+}
+
+.gratis{
+    background-color: #564b75;
+    left: 76%;
+}
+
+.arriba img{
+    width: 60%;
+}
+
 /* Título del contenido */
 
 .contenido .PS4 .titulo, .contenido .XBox .titulo, .contenido .Switch .titulo, .contenido .Steam .titulo, .contenido .Epic .titulo, .contenido .Gratis .titulo{
@@ -199,6 +261,8 @@ body{
 
     text-decoration: none;
     font-size: 1.5vw;
+
+    z-index: 50;
 }
 
 /* Línea y texto de 'Ver más' */
@@ -383,24 +447,51 @@ body{
 .interior section .contenido h2{
     position: absolute;
     top: 8%;
-    left: 19%;
+    left: 15%;
 
     margin-left: 15%;
     padding-top: 10%;
     font-size: 3vw;
 }
 
-.interior section .contenido h3{
+.interior section .contenido .largos{
+    top: 2%;
+}
+
+.interior section .contenido .sinopsis{
     position: absolute;
     top: 30%;
-    left: 4%;
+    left: -0.5%;
 
     padding-top: 5%;
-    padding-right: 22%;
+    padding-right: 25%;
     padding-left: 31%;
-    font-size: 0.9vw;
+    font-size: 1vw;
     font-family: Arial, Helvetica, sans-serif;
-    opacity: 0.7;
+}
+
+.puntuacion{
+    position: absolute;
+    top: 77%;
+    left: 37%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.puntuacion p{
+    padding-right: 5%;
+    font-size: 1.2em;
+}
+
+.puntuacion .estrellas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 2.5em;
+    color: rgb(250, 223, 70);
 }
 
 /* Lateral */

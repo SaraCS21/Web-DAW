@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Para que el ancho de la web reescale con el dispositivo utilizado -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" &amp;gt;>
+
     <!-- Insertamos el favicon de la web -->
 
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
@@ -18,24 +19,26 @@
     <!-- Iconos -->
 
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
+
     <!-- Fuente 1 -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
 
     <!-- Fuente 2 -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
-    
-    
+
+
     <link rel="stylesheet" href="./styles/index.css">
 </head>
+
 <body>
-    
+
     <!-- Encabezado -->
 
     <div class="encabezado">
@@ -69,6 +72,37 @@
     <div class="linea_scroll"></div>
     <p class="scroll">Scroll</p>
 
+    <a href="#ps4">
+        <div class="arriba play">
+            <img src="./assets/img/Logos/logo_ps4.png">
+        </div>
+    </a>
+    <a href="#xbox">
+        <div class="arriba xbox">
+            <img src="./assets/img/Logos/logo_xbox.png">
+        </div>
+    </a>
+    <a href="#switch">
+        <div class="arriba switch">
+            <img src="./assets/img/Logos/logo_switch.png">
+        </div>
+    </a>
+    <a href="#steam">
+        <div class="arriba steam">
+            <img src="./assets/img/Logos/logo_steam.png">
+        </div>
+    </a>
+    <a href="#epic">
+        <div class="arriba epic">
+            <img src="./assets/img/Logos/logo_epic.png">
+        </div>
+    </a>
+    <a href="#gratis">
+        <div class="arriba gratis">
+            <img src="./assets/img/Logos/logo_gratis.png">
+        </div>
+    </a>
+
     <div class="contenido">
 
         <section class="PS4">
@@ -78,18 +112,37 @@
                     <img class="logo" src="./assets/img/PS4/Index/logo.png">
                 </div>
             </div>
-            
-            <div class="interior">
+
+            <div class="interior" id="ps4">
 
                 <section id="spiderman" class="primero">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/PS4.html"><h1>Ver más de PlayStation</h1></a>
+                    <a href="./pages/PS4.html" class="enlace">
+                        <h1>Ver más de PlayStation</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Marvel's Spider-Man</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">En Marvel's Spider-Man encarnarás al superhéroe más emblemático del mundo y
+                            usarás las habilidades
+                            acrobáticas, la improvisación y las telarañas que han hecho famoso al trepamuros. Además,
+                            introduce
+                            elementos jamás vistos en un juego de Spider-Man. Desde cruzar la ciudad haciendo parkour y
+                            usando
+                            el entorno hasta un sistema de combate novedoso y escenas nuevas de superproducción... Este
+                            es un
+                            Spider-Man como nunca antes habías visto.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#spiderman">
@@ -115,12 +168,29 @@
                 <section id="horizon" class="segundo">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/PS4.html"><h1>Ver más de PlayStation</h1></a>
+                    <a class="enlace" href="pages/PS4.html">
+                        <h1>Ver más de PlayStation</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Horizon Zero Dawn</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">Eres Aloy, una hábil cazadora que depende de su velocidad,
+                            astucia y agilidad para sobrevivir y proteger a su tribu contra la fuerza,
+                            el tamaño y el poderío de las máquinas. Desafiando toda lógica, te embarcarás
+                            en una aventura trascendental y fascinante para desvelar los secretos de una
+                            civilización olvidada, los ingenios que dejaron atrás, y aprender más sobre
+                            las avanzadas tecnologías que decidirán el destino del planeta y de la propia
+                            existencia humana.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#spiderman">
@@ -146,12 +216,27 @@
                 <section id="KH" class="tercero">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/PS4.html"><h1>Ver más de PlayStation</h1></a>
+                    <a class="enlace" href="pages/PS4.html">
+                        <h1>Ver más de PlayStation</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Kingdom Hearts 3</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">Con la ayuda de Donald y Goofy, Sora lucha para evitar que una fuerza
+                            maligna conocida
+                            como los sincorazón invada todo el universo. Sora, Donald y Goofy unen fuerzas con
+                            personajes de Disney-Pixar nuevos y ya conocidos para superar enormes desafíos y
+                            plantarle cara a la oscuridad que se cierne sobre sus mundos.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#spiderman">
@@ -183,20 +268,37 @@
             <div class="titulo">
                 <div class="caja">
                     <img class="logo" src="./assets/img/Xbox/Index/logo.png">
-                </div>     
+                </div>
             </div>
-            
-            <div class="interior">
+
+            <div class="interior" id="xbox">
 
                 <section id="doom" class="primero">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/XBox.html"><h1>Ver más de XBox</h1></a>
+                    <a class="enlace" href="pages/XBox.html">
+                        <h1>Ver más de XBox</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Doom Eternal</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">En el juego, encarnarás al imparable DOOM Slayer y
+                            harás pedazos a demonios nuevos y clásicos con potentes
+                            armas en mundos increíbles y nunca vistos. En el papel
+                            del DOOM Slayer, descubrirás a tu regreso que los demonios
+                            han invadido la Tierra. Arrasa el infierno y descubre los
+                            orígenes del Slayer y su perpetua misión de matanza y destrucción...
+                            hasta el final.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#doom">
@@ -222,12 +324,26 @@
                 <section id="forza" class="segundo">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/XBox.html"><h1>Ver más de XBox</h1></a>
+                    <a class="enlace" href="pages/XBox.html">
+                        <h1>Ver más de XBox</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Forza 4</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">Por primera vez en el género de carreras y conducción,
+                            disfruta de estaciones dinámicas en un mundo abierto compartido. Explora
+                            escenas hermosas, colecciona más de 450 coches y conviértete en superestrella
+                            Horizon en la Gran Bretaña histórica.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#doom">
@@ -253,12 +369,27 @@
                 <section id="ori" class="tercero">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/XBox.html"><h1>Ver más de XBox</h1></a>
+                    <a class="enlace" href="pages/XBox.html">
+                        <h1>Ver más de XBox</h1>
+                    </a>
 
                     <div class="contenido">
-                        <h2>Ori and the Will of the Whisps</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <h2 class="largos">Ori and the Will of the Whisps</h2>
+                        <p class="sinopsis">Embárcate en una nueva aventura en un amplio y exótico mundo en el que te
+                            enfrentarás a imponentes enemigos y desafiantes rompecabezas en tu búsqueda para descifrar
+                            el destino de Ori. Descifra el verdadero destino de Ori en esta emocionante y cautivadora
+                            aventura guiada por la historia con una impresionante banda sonora.
+                            Explora un entorno amplio, exótico y de gran belleza.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#doom">
@@ -292,17 +423,31 @@
                     <img class="logo" src="./assets/img/Switch/Index/logo.png">
                 </div>
             </div>
-            
-            <div class="interior">
+
+            <div class="interior" id="switch">
                 <section id="mario" class="primero">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/Switch.html"><h1>Ver más de Nintendo Switch</h1></a>
+                    <a class="enlace" href="pages/Switch.html">
+                        <h1>Ver más de Nintendo Switch</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Super Mario Odyssey</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">Acompaña a Mario en una aventura en 3D enorme por todo el planeta usando sus
+                            nuevas habilidades para recoger lunas que servirán de combustible a tu aeronave, la Odyssey.
+                            ¡Y entretanto, rescata a la princesa Peach de las garras de Bowser!
+                        </p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#mario">
@@ -328,12 +473,28 @@
                 <section id="zelda" class="segundo">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/Switch.html"><h1>Ver más de Nintendo Switch</h1></a>
+                    <a class="enlace" href="pages/Switch.html">
+                        <h1>Ver más de Nintendo Switch</h1>
+                    </a>
 
                     <div class="contenido">
-                        <h2>The Legend of Zelda: Breath of the Wild</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <h2 class="largos">The Legend of Zelda: Breath of the Wild</h2>
+                        <p class="sinopsis">The Legend of Zelda: Breath of the Wild te sumergirá en un
+                            mundo de descubrimiento con un impresionante estilo artístico similar a The Wind Waker o
+                            Skyward Sword, una cautivadora banda sonora y una intrigante y melancólica historia.
+                            Despierta tras un siglo de letargo, adéntrate en el Hyrule más amplio y abierto jamás creado
+                            por las tres grandes Diosas y forja tu propio camino con el orden y aventuras que quieras.
+                        </p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#mario">
@@ -359,12 +520,28 @@
                 <section id="pokemon" class="tercero">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/Switch.html"><h1>Ver más de Nintendo Switch</h1></a>
+                    <a class="enlace" href="pages/Switch.html">
+                        <h1>Ver más de Nintendo Switch</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Pokémon Leyendas Arceus</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">Esta aventura te llevará a la región de Sinnoh, donde transcurrían Pokémon
+                            Diamante y
+                            Pokémon Perla. Sin embargo, hay que remontarse muchos años atrás, antes incluso de que se
+                            concibiera la idea de ser Entrenador o Entrenadora Pokémon o de la existencia de una Liga
+                            Pokémon.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#mario">
@@ -397,17 +574,33 @@
                     <img class="logo" src="./assets/img/Steam/Index/logo.png">
                 </div>
             </div>
-            
-            <div class="interior">
+
+            <div class="interior" id="steam">
                 <section id="LIS" class="primero">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/Steam.html"><h1>Ver más de Steam</h1></a>
+                    <a class="enlace" href="pages/Steam.html">
+                        <h1>Ver más de Steam</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Life is Strange</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">Sigue la historia de Max Caulfield, una estudiante de fotografía que
+                            descubre que es capaz
+                            de retroceder en el tiempo al salvar a su mejor amiga, Chloe Price.
+                            Juntas comienzan a investigar la misteriosa desaparición de otra estudiante, Rachel Amber, y
+                            pronto descubren el lado más oscuro de Arcadia Bay. Max debe aprender cuanto antes que
+                            cambiar el pasado a veces puede traer consecuencias desastrosas en el futuro.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#LIS">
@@ -424,7 +617,7 @@
                     <div class="lateral3">
                         <a href="#P2">
                             <img src="./assets/img/Steam/Portal2.jpg">
-                            <p>Stardew Valley</p>
+                            <p>Portal 2</p>
                         </a>
                     </div>
                     <img class="png" src="./assets/img/Steam/Index/LifeIsStrange_logo.png">
@@ -433,12 +626,27 @@
                 <section id="MH" class="segundo">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/Steam.html"><h1>Ver más de Steam</h1></a>
-                
+                    <a class="enlace" href="pages/Steam.html">
+                        <h1>Ver más de Steam</h1>
+                    </a>
+
                     <div class="contenido">
-                        <h2>The Legend of Zelda: Breath of the Wild</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <h2>Monster Hunter: World</h2>
+                        <p class="sinopsis">Bienvenido al nuevo Mundo: Poniéndose en la piel de un cazador, los
+                            jugadores tienen que
+                            embarcarse en una expedición a un continente recientemente descubierto conocido como “el
+                            nuevo mundo”. Tendrán que afrontar misiones en las que descubrir más acerca de esta
+                            misteriosa tierra.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#LIS">
@@ -464,12 +672,25 @@
                 <section id="P2" class="tercero">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/Steam.html"><h1>Ver más de Steam</h1></a>
+                    <a class="enlace" href="pages/Steam.html">
+                        <h1>Ver más de Steam</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Portal 2</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">Portal 2 continúa con esa fórmula ganadora consistente en una innovadora
+                            mecánica de juego, historia y música que condujeron al Portal original a ganar más de 70
+                            galardones y lo convirtieron en un nuevo mito de la industria.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#LIS">
@@ -502,17 +723,34 @@
                     <img class="logo" src="./assets/img/Epic Games/Index/logo.png">
                 </div>
             </div>
-            
-            <div class="interior">
+
+            <div class="interior" id="epic">
                 <section id="CP" class="primero">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/Epic.html"><h1>Ver más de Epic Games</h1></a>
+                    <a class="enlace" href="pages/Epic.html">
+                        <h1>Ver más de Epic Games</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Cyberpunk 2077</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">Cyberpunk 2077 es una historia de acción y aventura en mundo abierto
+                            ambientada en Night
+                            City, una megalópolis obsesionada con el poder, el glamur y la modificación corporal. Tu
+                            personaje es V, un mercenario que persigue un implante único que permite alcanzar la
+                            inmortalidad. Podrás personalizar las mejoras cibernéticas, las habilidades y el estilo de
+                            juego del personaje para dar forma a un mundo y a una historia que depende de tus
+                            decisiones.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#CP">
@@ -538,12 +776,28 @@
                 <section id="Kena" class="segundo">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/Epic.html"><h1>Ver más de Epic Games</h1></a>
+                    <a class="enlace" href="pages/Epic.html">
+                        <h1>Ver más de Epic Games</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Kena: Bridge of Spirits</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">Métete en la piel de Kena, forma un equipo de adorables espíritus llamados
+                            Rot, mejora sus
+                            habilidades y aprende nuevas técnicas de manipulación del entorno.
+                            Kena, una joven guía espiritual viaja hasta una aldea abandonada en busca del santuario de
+                            la montaña sagrada. Allí lucha por desvelar los secretos de esta comunidad olvidada y oculta
+                            en un exuberante bosque donde vagan espíritus cautivos.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#CP">
@@ -569,12 +823,29 @@
                 <section id="TW" class="tercero">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/Epic.html"><h1>Ver más de Epic Games</h1></a>
+                    <a class="enlace" href="pages/Epic.html">
+                        <h1>Ver más de Epic Games</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>The Witcher 3</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">The Witcher: Wild Hunt es un juego de rol de mundo abierto de nueva
+                            generación con una
+                            apasionante trama, ambientado en un espectacular universo de fantasía lleno de decisiones
+                            trascendentales y consecuencias impactantes. Encarnarás a Geralt de Rivia, un cazador de
+                            monstruos profesional que tiene que encontrar a la muchacha protagonista de una profecía en
+                            un amplio mundo abierto y rebosante de ciudades comerciales, islas con piratas vikingos,
+                            peligrosos puertos de montaña y cuevas olvidadas.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#CP">
@@ -607,17 +878,32 @@
                     <img class="logo" src="./assets/img/Juegos Gratuitos/Index/logo.png">
                 </div>
             </div>
-            
-            <div class="interior">
+
+            <div class="interior" id="gratis">
                 <section id="GI" class="primero">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/Juegos_Gratis.html"><h1>Ver más juegos gratuitos</h1></a>
+                    <a class="enlace" href="pages/Juegos_Gratis.html">
+                        <h1>Ver más juegos gratuitos</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Genshin Impact</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">En Genshin Impact los jugadores se encontrarán un extenso mundo de fantasía
+                            llamado Teyvat. En este animado mundo abierto, podrán encontrar una gran variedad de
+                            personajes y una historia atractiva y emocionante. Los jugadores asumirán el papel de un
+                            misterioso «viajero», que emprende un viaje para encontrar a su hermano/a perdido/a y a la
+                            vez también desentrañar los misterios que esconde el continente de Teyvat.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#GI">
@@ -643,12 +929,27 @@
                 <section id="LOL" class="segundo">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/Juegos_Gratis.html"><h1>Ver más juegos gratuitos</h1></a>
+                    <a class="enlace" href="pages/Juegos_Gratis.html">
+                        <h1>Ver más juegos gratuitos</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>League of Legends</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">League of Legends es un juego de estrategia por equipos en el que dos
+                            equipos de cinco
+                            campeones se enfrentan para ver quién destruye antes la base del otro. Elige de entre un
+                            elenco de 140 campeones para realizar jugadas épicas, asesinar rivales y derribar torretas
+                            para alzarte con la victoria.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#GI">
@@ -674,12 +975,25 @@
                 <section id="F" class="tercero">
 
                     <div class="linea"></div>
-                    <a class="enlace" href="pages/Juegos_Gratis.html"><h1>Ver más juegos gratuitos</h1></a>
+                    <a class="enlace" href="pages/Juegos_Gratis.html">
+                        <h1>Ver más juegos gratuitos</h1>
+                    </a>
 
                     <div class="contenido">
                         <h2>Fortnite</h2>
-                        <h3>Bowser ha vuelto a secuestrar a la princesa Peach, pero esta vez, 
-                            con "buenas intenciones": ¡está preparando una boda por todo lo alto!</h3>
+                        <p class="sinopsis">Fortnite es un juego online de disparos (lo que se conoce como un shooter) en tercera
+                            persona (es decir; que ves a tu personaje según se mueve). Tiene dos modos de juego: Salvar
+                            al mundo y Battle Royale.</p>
+                        <div class="puntuacion">
+                            <p>Puntuación: </p>
+                            <div class="estrellas">
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star bx-tada bx-rotate-180'></i>
+                                <i class='bx bxs-star-half bx-tada'></i>
+                                <i class='bx bx-star bx-tada bx-rotate-180'></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="lateral1">
                         <a href="#GI">
@@ -705,22 +1019,24 @@
         </section>
     </div>
 
-        <!-- Footer -->
+    <!-- Footer -->
 
-        <footer>
-            <ul class="iconos">
-                <li><a href="https://www.facebook.com/profile.php?id=100077743944510" target="blank"><i class='bx bxl-facebook-circle'></i></a></li>
-                <li><a href="https://twitter.com/LetsPla06785410" target="blank"><i class='bx bxl-twitter'></i></a></li>
-                <li><a href="https://www.instagram.com/letsplay3081/?hl=es" target="blank"><i class='bx bxl-instagram-alt' ></i></a></li>
-            </ul>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="Videojuegos.html">Videojuegos</a></li>
-                <li><a href="Noticias.html">Noticias</a></li>
-                <li><a href="Contacto.html">Contáctanos</a></li>
-            </ul>
-            <p>©2022 Sara del Pino Cabrera Sánchez | Todos los derechos reservados</p>
-        </footer>
-        
-    </body>
+    <footer>
+        <ul class="iconos">
+            <li><a href="https://www.facebook.com/profile.php?id=100077743944510" target="blank"><i
+                        class='bx bxl-facebook-circle'></i></a></li>
+            <li><a href="https://twitter.com/LetsPla06785410" target="blank"><i class='bx bxl-twitter'></i></a></li>
+            <li><a href="https://www.instagram.com/letsplay3081/?hl=es" target="blank"><i
+                        class='bx bxl-instagram-alt'></i></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Videojuegos.html">Videojuegos</a></li>
+            <li><a href="Noticias.html">Noticias</a></li>
+            <li><a href="Contacto.html">Contáctanos</a></li>
+        </ul>
+        <p>©2022 Sara del Pino Cabrera Sánchez | Todos los derechos reservados</p>
+    </footer>
+
+</body>
 </body>
