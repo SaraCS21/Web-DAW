@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+
+    background-color: #eafef1;
+}
+
+/* Encabezado de la web */
+
+.encabezado{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    grid-area: cab;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #212932;
+}
+
+/* Logo iluminado */
+
+.logo{
+    display: flex; 
+    align-items: center;
+}
+
+.encabezado a .logo i{
+    display: flex;
+
+    font-size: 3vw;
+
+    animation: animate 3s linear infinite;
+    animation-delay: 0.1s;
+}
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 60px #00b3ff;
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Encabezado */
+
+.encabezado{
+    position: relative;
+    z-index: 1000;
+    bottom: 45%;
+
+    display: flex;
+    width: 100%;
+    height: 100px;
+
+    background-color: #212932;
+    box-shadow: 0 0 10px #4e4e4e;
+}
+
+.encabezado a{
+    height: 180%;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    transition: 1s;
+    color: white;
+}
+
+.encabezado a h2{
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.encabezado ul{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+.encabezado ul li{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 28%;
+    height: 100%;
+}
+
+.encabezado ul li a{
+    height: 100%;
+}
+
+/* Menú desplegable */
+
+.encabezado ul li > ul{
+    display: none;
+}
+
+.encabezado ul li:hover > ul{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+
+    display: block;
+
+    z-index: 1000;
+}
+
+.encabezado ul li ul li{
+    width: 100%;
+    height: 50px;
+
+    background-color: #393d45;
+}
+
+/* Contenido */
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    background-color: black;
+    color: white;
+}
+
+.ps4{
+    background-color: white;
+    color: black;
+}
+
+.arriba{
+    width: 100%;
+    position: relative;
+}
+
+.contenido video, .contenido .imagen{
+    width: 100%;
+    height: 1389px;
+    z-index: 1;
+
+    object-fit: cover;
+}
+
+.arriba h1{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+
+    font-size: 5em;
+
+    z-index: 50;
+}
+
+.arriba p{
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    width: 20%;
+
+    text-align: center;
+
+    font-style: italic;
+    font-size: 1.9em;
+
+    z-index: 50;
+}
+
+.medio{
+    position: relative;
+
+    width: 100%;
+    height: 1000px;
+    margin: 5%;
+}
+
+.medio h1{
+    position: absolute;
+    font-size: 5em;
+}
+
+.medio h1:nth-child(1){
+    top: 3%;
+}
+
+.medio p{
+    position: absolute;
+    top: 16%;
+    width: 30%;
+
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.primero h1{
+    left: 5%;
+}
+
+.primero p{
+    left: 5%;
+}
+
+.medio .consola{
+    position: absolute;
+    right: -2%;
+    top: -15%;
+}
+
+.segundo{
+    width: 100%;
+}
+
+.segundo img{
+    position: absolute;
+}
+
+.segundo img:nth-child(1){
+    top: 55%;
+    left: 10%;
+    width: 15%;
+}
+
+.segundo img:nth-child(2){
+    top: 47%;
+    left: 20%;
+    width: 10%;
+}
+
+.segundo img:nth-child(3){
+    top: 72%;
+    left: 18%;
+    width: 13%;
+}
+
+.segundo img:nth-child(4){
+    top: 70%;
+    left: 27%;
+    width: 8%;
+}
+
+.segundo h1{
+    top: 55%;
+    right: 10%;
+}
+
+.segundo p{
+    right: 20%;
+}
+
+.segundo .p1{
+    top: 68%;
+}
+
+.segundo .p2{
+    top: 73%;
+}
+
+.segundo .p3{
+    top: 78%;
+}
+
+.tercero{
+    width: 100%;
+    filter: brightness(80%);
+}
+
+.tercero img{
+    width: 100%;
+}
+
+.medio_cuarto{
+    width: 100%;
+    margin: 3%;
+}
+
+.cuarto{
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+}
+
+.cuarto img{
+    width: 28%;
+    height: 300px;
+}
+
+.cuarto h1{
+    position: absolute;
+    top: 70%;
+}
+
+.cuarto p{
+    position: absolute;
+    top: 88%;
+    width: 30%;
+
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.quinto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.quinto video{
+    width: 80%;
+}
+
+.ultimo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 3%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.ultimo img{
+    width: 100%;
+}
+
+.ultimo h1{
+    position: absolute;
+    top: 35%;
+}
+
+.ultimo a{
+    position: absolute;
+    top: 58%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #61f000;
+    border-radius: 20px;
+    width: 8%;
+    height: 40px;
+
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+
+    filter: brightness(80%);
+}
+
+.ultimo .ps4{
+    color: white;
+    background-color: #1957ee;
+} 
+
+.ultimo a:hover{
+    filter: brightness(100%);
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 20px 50px;
+
+    background: #212932;
+}
+
+.iconos, .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.iconos li, .menu li{
+    list-style: none;
+}
+
+.iconos li a{
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.iconos li a:hover{
+    transform: translateY(-10px);
+}
+
+.iconos li a:hover .bxl-twitter{
+    color: #00acee;
+}
+
+.iconos li a:hover .bxl-facebook-circle{
+    color: #3b5998;
+}
+
+.iconos li a:hover .bxl-instagram-alt{
+    color: #C13584;
+}
+
+.menu li a{
+    margin: 0 10px;
+
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+}
