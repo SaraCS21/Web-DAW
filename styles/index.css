@@ -303,6 +303,18 @@ body{
     scroll-behavior: smooth;
 }
 
+.contenido .PS4 .interior .section, .contenido .XBox .interior .section, .contenido .Switch .interior .section, .contenido .Steam .interior .section, .contenido .Epic .interior .section, .contenido .Gratis .interior .section{
+    position: relative;
+    left: 20%;
+    width: 65%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    scroll-snap-align: start;
+}
+
 .contenido .PS4 .interior section, .contenido .XBox .interior section, .contenido .Switch .interior section, .contenido .Steam .interior section, .contenido .Epic .interior section, .contenido .Gratis .interior section{
     position: relative;
     left: 20%;
@@ -316,6 +328,16 @@ body{
 }
 
 /* Imagen */
+
+.contenido .PS4 .interior .section .png, .contenido .XBox .interior .section .png, .contenido .Switch .interior .section .png, .contenido .Steam .interior .section .png, .contenido .Epic .interior .section .png, .contenido .Gratis .interior .section .png{
+    position: absolute;
+    right: 80%;
+    bottom: 10%;
+
+    width: 40rem;
+    height: 46rem;
+    z-index: 500;
+}
 
 .contenido .PS4 .interior section .png, .contenido .XBox .interior section .png, .contenido .Switch .interior section .png, .contenido .Steam .interior section .png, .contenido .Epic .interior section .png, .contenido .Gratis .interior section .png{
     position: absolute;
@@ -333,7 +355,8 @@ body{
     background-color: #003791;
 }
 
-.contenido .PS4 h1{
+.contenido .PS4 .h1{
+    font-weight: bold;
     color: #003791;
 }
 
@@ -351,7 +374,8 @@ body{
     background-color: #107C10;
 }
 
-.contenido .XBox h1{
+.contenido .XBox .h1{
+    font-weight: bold;
     color: #107C10;
 }
 
@@ -369,7 +393,8 @@ body{
     background-color: #e60012;
 }
 
-.contenido .Switch h1{
+.contenido .Switch .h1{
+    font-weight: bold;
     color: #e60012;
 }
 
@@ -387,7 +412,8 @@ body{
     background-color: #2a475e;
 }
 
-.contenido .Steam h1{
+.contenido .Steam .h1{
+    font-weight: bold;
     color: #2a475e;
 }
 
@@ -405,7 +431,8 @@ body{
     background-color: black;
 }
 
-.contenido .Epic h1{
+.contenido .Epic .h1{
+    font-weight: bold;
     color: black;
 }
 
@@ -423,7 +450,8 @@ body{
     background-color: #564b75;
 }
 
-.contenido .Gratis h1{
+.contenido .Gratis .h1{
+    font-weight: bold;
     color: #564b75;
 }
 
@@ -433,18 +461,18 @@ body{
 
 /* Parte común */
 
-.interior section{
+.interior .section, .interior section{
     height: 100vh;
 }
 
-.interior section .contenido{
+.interior .section .contenido, .interior section .contenido{
     height: 90vh;
     margin-top: 11%;
     margin-bottom: 11%;
     margin-right: 20%;
 }
 
-.interior section .contenido h2{
+.interior .section .contenido h2, .interior section .contenido h2{
     position: absolute;
     top: 8%;
     left: 15%;
@@ -454,11 +482,11 @@ body{
     font-size: 3vw;
 }
 
-.interior section .contenido .largos{
+.interior .section .contenido .largos, .interior section .contenido .largos{
     top: 2%;
 }
 
-.interior section .contenido .sinopsis{
+.interior .section .contenido .sinopsis, .interior section .contenido .sinopsis{
     position: absolute;
     top: 30%;
     left: -0.5%;

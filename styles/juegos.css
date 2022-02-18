@@ -13,6 +13,10 @@ body{
     font-family: 'Inconsolata', monospace;
 }
 
+iframe{
+    border: none;
+}
+
 /* Logo iluminado */
 
 .logo{
