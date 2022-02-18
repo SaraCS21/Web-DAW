@@ -151,6 +151,7 @@ body{
     color: black;
 }
 
+
 .arriba{
     width: 100%;
     position: relative;
@@ -335,6 +336,10 @@ body{
     width: 80%;
 }
 
+.quinto .video_quinto{
+    height: 480px;
+}
+
 .ultimo{
     position: relative;
     display: flex;
@@ -377,6 +382,11 @@ body{
 .ultimo .ps4{
     color: white;
     background-color: #1957ee;
+} 
+
+.ultimo .switch{
+    color: white;
+    background-color: #e70013;
 } 
 
 .ultimo a:hover{
