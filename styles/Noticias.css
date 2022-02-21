@@ -169,8 +169,7 @@ body{
 
 .slider a{ 
     width: 100%;
-    height: 100%;
-    font-style: none;    
+    height: 100%; 
 }
 
 .slider li{

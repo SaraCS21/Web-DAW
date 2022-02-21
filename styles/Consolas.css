@@ -146,7 +146,7 @@ body{
     color: white;
 }
 
-.ps4{
+.ps4, .steam{
     background-color: white;
     color: black;
 }
@@ -178,10 +178,8 @@ body{
 .arriba p{
     position: absolute;
     top: 25%;
-    left: 13%;
+    left: 10%;
     width: 20%;
-
-    text-align: center;
 
     font-style: italic;
     font-size: 1.9em;
@@ -334,6 +332,7 @@ body{
 
 .quinto video{
     width: 80%;
+    height: 750px;
 }
 
 .quinto .video_quinto{
