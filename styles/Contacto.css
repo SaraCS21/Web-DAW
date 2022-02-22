@@ -11,7 +11,7 @@ body{
     justify-items: center;
     align-items: center;
     font-family: 'Inconsolata', monospace;
-    background-color: #61fcf7;
+    background-color: #eafef1;
 }
 
 /* Encabezado de la web */
@@ -166,7 +166,7 @@ body{
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(123, 199, 148, 0.5);
+    background-color: rgba(164, 246, 191, 0.8);
     box-shadow: 0 0 10px #0d3837;
     border-radius: 50px; 
 }
@@ -189,7 +189,7 @@ body{
     
     font-size: 2.5em;
     opacity: 1;
-    text-shadow: 0.05em 0.05em 0.1em #c5fad7;
+    text-shadow: 0.05em 0.05em 0.1em #5fa175;
 }
 
 .contenido div{
@@ -260,11 +260,11 @@ body{
 }
 
 .contenido div input:focus{
-    border-bottom: 2px solid #a4f6bf;
+    border-bottom: 2px solid #29a39e;
 }
 
 .contenido div textarea:focus{
-    border: 2px solid #a4f6bf;
+    border: 2px solid #29a39e;
 }
 
 .contenido div input:focus-visible, .contenido div textarea:focus-visible{
@@ -275,7 +275,7 @@ body{
     width: 17%;
     height: 40px;
 
-    background-color: rgba(34, 88, 87, 0.8);
+    background-color: rgba(41, 163, 158, 0.9);
     box-shadow: 0 0 10px #578365;
     border: 0;
     border-radius: 20px;
@@ -288,7 +288,7 @@ body{
 .boton:hover{
     cursor: pointer;
 
-    background-color: rgba(34, 88, 87, 0.7);
+    background-color: rgba(41, 163, 158, 0.7);
     box-shadow: 0 0 10px #c5fad7;
 }
 

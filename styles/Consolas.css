@@ -388,6 +388,11 @@ body{
     background-color: #e70013;
 } 
 
+.ultimo .steam{
+    color: white;
+    background-color: #414955;
+}
+
 .ultimo a:hover{
     filter: brightness(100%);
 }
