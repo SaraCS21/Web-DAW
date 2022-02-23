@@ -168,7 +168,7 @@ body{
 
     background-color: rgba(164, 246, 191, 0.8);
     box-shadow: 0 0 10px #0d3837;
-    border-radius: 50px; 
+    border-radius: 150px 10px 150px 10px; 
 }
 
 .contenido form{
