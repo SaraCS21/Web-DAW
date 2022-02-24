@@ -27,7 +27,7 @@ body{
     animation-delay: 0.1s;
 }
 
-@keyframes animate{
+@keyframes animate{     /* Función que hace que la sombra tras el logo cambie de color */
     0%{
         filter: hue-rotate(0deg);
         text-shadow: 0 0 10px #00b3ff,
@@ -134,7 +134,7 @@ body{
     animation: cambio 20s infinite alternate;
 }
 
-@keyframes cambio{
+@keyframes cambio{      /* Función que cambia el margin-left de lo que indiquemos cada X tiempo */
     0% {margin-left: 0;}
     20% {margin-left: 0;}
 
@@ -314,22 +314,6 @@ body{
     padding-top: 5px;
 }
 
-.contenido a:hover img{
-    opacity: 0.4;
-    transition: 0.5s;
-}
-
-.contenido a:hover .puntuacion{
-    background-color: turquoise;
-    transition: 0.5s;
-}
-
-.contenido a:hover .puntuacion p{
-    color: black;
-    font-weight: bolder;
-    transition: 0.5s;
-}
-
 .boton{
     display: flex;
     justify-content: center;
@@ -352,9 +336,27 @@ body{
     opacity: 0.5;
 }
 
+/* Efectos Hover */
+
 .boton a:hover{
     transition: 0.5s;
     opacity: 1;
+}
+
+.contenido a:hover img{
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.contenido a:hover .puntuacion{
+    background-color: turquoise;
+    transition: 0.5s;
+}
+
+.contenido a:hover .puntuacion p{
+    color: black;
+    font-weight: bolder;
+    transition: 0.5s;
 }
 
 /* Footer */

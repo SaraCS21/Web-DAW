@@ -42,7 +42,7 @@ body{
     animation-delay: 0.1s;
 }
 
-@keyframes animate{
+@keyframes animate{     /* Función que hace que la sombra tras el logo cambie de color */
     0%{
         filter: hue-rotate(0deg);
         text-shadow: 0 0 10px #00b3ff,
@@ -259,7 +259,7 @@ body{
     border-bottom: 2px solid black;
 }
 
-.contenido div input:focus{
+.contenido div input:focus{     /* Con focus indicamos que queremos que haga cuando tenemos pulsado el elemento*/
     border-bottom: 2px solid #29a39e;
 }
 
@@ -267,8 +267,8 @@ body{
     border: 2px solid #29a39e;
 }
 
-.contenido div input:focus-visible, .contenido div textarea:focus-visible{
-    outline-width: 0;
+.contenido div input:focus-visible, .contenido div textarea:focus-visible{ 
+    outline-width: 0;       /* Quitamos la visibilidad del cuadro que se ve al pulsar los input */
 }
 
 .boton{

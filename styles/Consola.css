@@ -10,8 +10,8 @@ body{
     flex-wrap: wrap;
     justify-items: center;
     align-items: center;
-    font-family: 'Inconsolata', monospace;
 
+    font-family: 'Inconsolata', monospace;
     background-color: #eafef1;
 }
 
@@ -20,12 +20,13 @@ body{
 .encabezado{
     position: sticky;
     top: 0;
-    z-index: 1000;
-    grid-area: cab;
+
     display: flex;
     width: 100%;
     height: 100px;
+
     background-color: #212932;
+    z-index: 1000;
 }
 
 /* Logo iluminado */
@@ -44,7 +45,7 @@ body{
     animation-delay: 0.1s;
 }
 
-@keyframes animate{
+@keyframes animate{     /* Función que hace que la sombra tras el logo cambie de color */
     0%{
         filter: hue-rotate(0deg);
         text-shadow: 0 0 10px #00b3ff,
@@ -184,7 +185,7 @@ body{
     transition: 1.5s;
 }
 
-@keyframes movimiento{
+@keyframes movimiento{      /* Función que rota un elemento de izquierda a derecha */
     0%{
         transform: rotate(8deg);
     }

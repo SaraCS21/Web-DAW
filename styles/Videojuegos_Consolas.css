@@ -9,6 +9,8 @@ body{
     flex-wrap: wrap;
     justify-items: center;
     align-items: center;
+
+    background-color: #eafef1;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -17,11 +19,13 @@ body{
 .encabezado{
     position: sticky;
     top: 0;
-    z-index: 1000;
+    
     display: flex;
     width: 100%;
     height: 100px;
+
     background-color: #212932;
+    z-index: 1000;
 }
 
 /* Logo iluminado */
@@ -40,7 +44,7 @@ body{
     animation-delay: 0.1s;
 }
 
-@keyframes animate{
+@keyframes animate{     /* Función que hace que la sombra tras el logo cambie de color */
     0%{
         filter: hue-rotate(0deg);
         text-shadow: 0 0 10px #00b3ff,
@@ -147,7 +151,7 @@ body{
     animation: cambio 20s infinite alternate;
 }
 
-@keyframes cambio{
+@keyframes cambio{      /* Función que cambia el margin-left de lo que indiquemos cada X tiempo */
     0% {margin-left: 0;}
     20% {margin-left: 0;}
 
@@ -208,8 +212,6 @@ body{
 .web{
     display: flex;
     flex-wrap: wrap;
-
-    background-color: #eafef1;
 }
 
 .contenido{
@@ -229,54 +231,14 @@ body{
     padding-top: 2%;
 }
 
-.juego_derecha img{
-    width: 40%;
-    height: 320px;
-
-    border-radius: 30px;
-    box-shadow: 2px 2px 5px #96aa9d;
-}
-
-.juego_izquierda img{
-    width: 40%;
-    height: 320px;
-    margin-right: 5%;
-
-    border-radius: 30px;
-    box-shadow: 2px 2px 5px #96aa9d;
-}
-
-.texto_derecha{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-    padding-left: 5%;
-}
-
-.texto_izquierda{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: end;
-}
-
 .texto_derecha h3, .texto_izquierda h3{
     width: 100%;
     font-size: 2.5em;
 }
 
-.texto_izquierda h3{
-    padding-right: 8.7%;
-}
-
 .sinopsis, .generos{
     width: 80%;
     font-family: 'Raleway', sans-serif;
-}
-
-.texto_izquierda .sinopsis, .texto_izquierda .generos{
-    width: 91%;
 }
 
 .sinopsis{
@@ -300,9 +262,55 @@ body{
     box-shadow: 2px 2px 5px #96aa9d;
 }
 
+/* Juegos a la derecha */
+
+.juego_derecha img{
+    width: 40%;
+    height: 320px;
+
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #96aa9d;
+}
+
+.texto_derecha{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding-left: 5%;
+}
+
 .texto_derecha .boton{
     margin-left: 70%;
 }
+
+/* Juegos a la izquierda */
+
+.juego_izquierda img{
+    width: 40%;
+    height: 320px;
+    margin-right: 5%;
+
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #96aa9d;
+}
+
+.texto_izquierda{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: end;
+}
+
+.texto_izquierda h3{
+    padding-right: 8.7%;
+}
+
+.texto_izquierda .sinopsis, .texto_izquierda .generos{
+    width: 91%;
+}
+
+/* Efectos Hover */
 
 .boton a{
     text-decoration: none;

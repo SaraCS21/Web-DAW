@@ -33,7 +33,7 @@ iframe{
     animation-delay: 0.1s;
 }
 
-@keyframes animate{
+@keyframes animate{     /* Función que hace que la sombra tras el logo cambie de color */
     0%{
         filter: hue-rotate(0deg);
         text-shadow: 0 0 10px #00b3ff,
