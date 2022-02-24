@@ -176,6 +176,14 @@ body{
     z-index: 50;
 }
 
+.arriba .h1_switch, .arriba .h1_steam{
+    text-shadow: 1px 1px white, -1px -1px black;
+}
+
+.arriba .h1_play{
+    text-shadow: 1px 1px black, -1px -1px white;
+}
+
 .arriba p{
     position: absolute;
     top: 25%;
@@ -186,6 +194,18 @@ body{
     font-size: 1.9em;
 
     z-index: 50;
+}
+
+.arriba .p_switch{
+    text-shadow: 1px 1px rgb(102, 28, 28);
+}
+
+.arriba .p_steam{
+    text-shadow: 1px 1px rgb(107, 107, 107);
+}
+
+.arriba .p_play{
+    text-shadow: 1px 1px rgb(184, 184, 184);
 }
 
 .medio{
